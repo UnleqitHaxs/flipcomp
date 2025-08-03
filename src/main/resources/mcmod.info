@@ -1,0 +1,11 @@
+[
+  {
+    "modid": "flippi",
+    "name": "Flippi",
+    "description": "Hypixel Auction & Bazaar analysis mod (semi-automatic).",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "authorList": ["Flippi"],
+    "credits": ""
+  }
+]
