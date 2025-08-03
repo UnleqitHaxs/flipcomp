@@ -19,7 +19,7 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew setupCiWorkspace build
       - name: Upload build artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Flippi-Mod-Jar
           path: build/libs/Flippi-1.0.0.jar
