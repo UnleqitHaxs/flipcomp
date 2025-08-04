@@ -16,12 +16,10 @@ jobs:
         with:
           java-version: '8'
           distribution: 'temurin'
-      - name: Check Gradle wrapper files
-        run:  ls -la gradle/wrapper
-      - name: Make Gradle wrapper executable
-        run:  chmod +x gradlew
-      - name: Build with Gradle
-        run: ./gradlew setupCiWorkspace build
+      - name: Build mit Gradle-Build-Action
+        uses: gradle/gradle-build-action@v2
+        with:
+          arguments: setupCiWorkspace build
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
