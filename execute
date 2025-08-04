@@ -1,0 +1,2 @@
+- name: Make Gradle wrapper executable
+  run: chmod +x gradlew
